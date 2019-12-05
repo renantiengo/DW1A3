@@ -1,0 +1,146 @@
+﻿
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* - matheus*/
+
+body { /* imagem de plano de fundo cobre a tela e não se repete */
+    background-repeat: no-repeat;
+    background-size: cover; /* imagem de plano */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navigation { /* estilos do menu de navegação - matheus */
+    font-size: 28px;
+    color: #b3b3b3;
+    height: 50px;
+    margin: 10px 100px 20px 100px;
+    background-color: rgb(74, 74, 74, 0.9);
+    border: solid 0 rgb(74, 74, 74, 0.9);
+    ;
+    border-radius: 0px 20px 0px 20px;
+}
+
+    .navigation ul { /* estilos da lista dentro do menu de navegação - matheus */
+        margin-top: 10px;
+        list-style: none;
+        padding-left: 0;
+        text-align: center;
+        height: 50px;
+    }
+
+    .navigation li { /* estilos dos itens do menu de navegação - matheus */
+        font-weight: 900;
+        display: inline-block;
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 50px;
+    }
+
+        .navigation li.threeline-icon { /* esconde o ícone do menu para celular - matheus */
+            display: none;
+        }
+
+    .navigation a { /* estilos do texto dos itens do menu - matheus */
+        color: #dbdbdb;
+        text-decoration: none;
+        text-shadow: 1px 1px 50px black;
+        margin-bottom: 5px;
+    }
+
+        .navigation a:hover { /* mudar a cor ao passar o mouse - matheus */
+            color: #88b4fd;
+        }
+
+.capa { /* define o corpo do site para ocupar 70% da tela e centralizado - matheus */
+    width: 70%;
+    background-color: rgb(74, 74, 74, 0.9);
+    margin: auto;
+    padding: 10px 50px;
+    text-shadow: 1px 1px 50px black;
+}
+
+    .capa span { /* destacar o nome da loja - matheus */
+        color: #88b4fd;
+        display: block;
+    }
+
+.loja-pic { /* imagem flutua à esquerda do texto - matheus */
+    float: left;
+    width: 305px;
+    margin-right: 20px;
+}
+
+.titulo {
+    vertical-align: top;
+    color: #dbdbdb;
+}
+
+    .titulo h1 { /* cria uma sombra atras do texto para destaque - matheus */
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 45px;
+        text-shadow: 1px 1px 50px black;
+    }
+
+    .titulo h2 {
+        font-weight: 900;
+        font-size: 16px;
+        margin-top: -30px;
+    }
+
+    .titulo p {
+        text-align: justify;
+    }
+
+.caminho { /* estilos mapa do site - matheus */
+    list-style: none;
+    padding-left: 0;
+    color: #88b4fd;
+}
+
+    .caminho li {
+        display: inline-block;
+    }
+
+    .caminho a {
+        color: #88b4fd;
+    }
+
+        .caminho a:hover {
+            color: #dbdbdb;
+        }
+
+
+
+
+@media (max-width: 900px) { /* define como o estilo quando a página chegar a 900px de largura - matheus */
+
+    body { /* plano de fundo se ajusta à tela - matheus*/
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+    .navigation {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 50px;
+    }
+
+        .navigation li { /* oculta os itens do menu de navegação -matheus */
+            display: none;
+        }
+
+            .navigation li.threeline-icon { /* mostra o ícone de menu - matheus */
+                display: inline-block;
+                padding: 0;
+            }
+
+    .loja-pic { /* ajusta a imagem - matheus */
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
