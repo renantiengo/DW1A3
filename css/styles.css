@@ -40,6 +40,11 @@ body { /* imagem de plano de fundo cobre a tela e não se repete */
 	display: none;
 }
 
+.navigation li.threeline-icon:hover { /* muda a cor e o cursor, caso o site seja aberto em navegador com tela reduzida - matheus */
+	color: #88b4fd;
+	cursor: pointer;
+}
+
 .navigation a { /* estilos do texto dos itens do menu - matheus */ 
 	color: #dbdbdb;
 	text-decoration: none;
@@ -144,7 +149,7 @@ body { /* imagem de plano de fundo cobre a tela e não se repete */
 
 
 
-
+/* estilos do menu retratil de celular - matheus */
 	.menujs{
 		width: 90%;
 	}
