@@ -8,7 +8,6 @@ body { /* imagem de plano de fundo cobre a tela e não se repete */
 	background-repeat: no-repeat;
 	background-size: cover; /* imagem de plano */
 	font-family: 'Source Sans Pro', sans-serif;	
-	margin: 0 0 10px;
 }
 
 html, body {height:100%;}
@@ -132,7 +131,9 @@ main .geral{
 	bottom:0;
 	width: 100%;
 	position: relative;
+    margin-top: 30px;
 	min-height: 50px;
+    margin-bottom: 10px;
 	
 }
 /*rodape da index - position para fixar ao fim da pagina - Renan*/
@@ -147,10 +148,21 @@ main .geral{
 	position: absolute;	
 }
 
-#rodape li{ 
-	display: block;
-	text-align: center;
-	color: white;		
+#rodape { 
+	display: block;	
+	color: white;
+    text-align:center;    
+
+}
+
+/*rodape - alinhar e centralizar - Renan*/
+.dadosRodape li {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    vertical-align: central;
+    margin: 10px 10px 10px 10px;
+    
 }
 
 #rodape li a{ 
@@ -189,10 +201,11 @@ iframe { /* centralizar ifrmae - matheus */
 	color: #88b4fd;
 }
 
-.loja {/* dispões as fotos uma embaixo da outra com o texto ao lado - matheus */
-	width: 100%;
-	display: block;
-	margin-top: 30px;
+.loja { /* dispões as fotos uma embaixo da outra com o texto ao lado - matheus */
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .loja h2 {
@@ -201,7 +214,7 @@ iframe { /* centralizar ifrmae - matheus */
 }
 
 .loja p {
-	margin: 0;
+	margin: 0;   
 }
 
 .loja-img { /* imagem flutua à esquerda do texto - matheus */
@@ -209,6 +222,12 @@ iframe { /* centralizar ifrmae - matheus */
 	width: 220px;
 	margin-right: 20px;
 	margin-bottom: 20px;
+}
+
+.mapa-img { /* Renan*/    
+    width: 90%;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 
