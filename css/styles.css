@@ -8,16 +8,24 @@ body { /* imagem de plano de fundo cobre a tela e não se repete */
 	background-repeat: no-repeat;
 	background-size: cover; /* imagem de plano */
 	font-family: 'Source Sans Pro', sans-serif;	
+	margin: 0 0 10px;
+}
+
+html, body {height:100%;}
+
+/*position para poder fixar rodapé apos conteudo - Renan*/
+main .geral{
+	min-height:100%;
+    position:relative;	
 }
 
 .navigation { /* estilos do menu de navegação - matheus */
 	font-size: 28px;
 	color: #b3b3b3;
 	height: auto;
-	margin: 10px 100px 20px 100px;
 	background-color: rgb(74, 74, 74, 0.9);
-	border: solid 0 rgb(74, 74, 74, 0.9);;
-    border-radius:0px 20px 0px 20px;
+	border: solid 0 rgb(74, 74, 74, 0.9);
+    width:100%;
 }
 
 .navigation ul { /* estilos da lista dentro do menu de navegação - matheus */
@@ -59,9 +67,10 @@ body { /* imagem de plano de fundo cobre a tela e não se repete */
 .capa {/* define o corpo do site para ocupar 70% da tela e centralizado - matheus */
 	width: 70%;
 	background-color: rgb(74, 74, 74, 0.9);
-	margin: auto;
+	margin: auto;	
 	padding: 10px 50px;	
 	text-shadow: 1px 1px 50px black;
+	
 }
 
 .capa span { /* destacar o nome da loja - matheus */
@@ -90,7 +99,6 @@ body { /* imagem de plano de fundo cobre a tela e não se repete */
 
 .titulo h2 {
 	font-weight: 900;
-	font-size: 16px;
 	margin-top: -30px;
 }
 
@@ -115,6 +123,94 @@ body { /* imagem de plano de fundo cobre a tela e não se repete */
 	color: #dbdbdb;
 }
 
+/* rodapé para fixar apos conteudo - Renan */
+.rodape {	
+	font-size: 16px;	
+	color: #b3b3b3;
+	background-color: rgb(74, 74, 74, 0.9);
+	border: solid 0 rgb(74, 74, 74, 0.9);	
+	bottom:0;
+	width: 100%;
+	position: relative;
+	min-height: 50px;
+	
+}
+/*rodape da index - position para fixar ao fim da pagina - Renan*/
+.rodapeIndex{	
+	font-size: 16px;	
+	color: #b3b3b3;
+	background-color: rgb(74, 74, 74, 0.9);
+	border: solid 0 rgb(74, 74, 74, 0.9);	
+	bottom:0;	
+	min-height: 50px;
+	width: 100%;
+	position: absolute;
+	
+}
+
+#rodape li{ 
+	display: block;
+	text-align: center;
+	color: white;		
+}
+
+#rodape li a{ 
+	color: white;
+	text-align: center;		
+}
+/*aumenta font ao passar o mouse - Renan*/
+#rodape li a:hover{ 
+	color: white;
+	font-size:19px;
+	cursor: pointer;	
+}
+
+
+
+iframe { /* centralizar ifrmae - matheus */ 
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.catalogo {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titulo a { /* estilos do texto dos itens do menu - matheus */ 
+	color: #dbdbdb;
+	text-shadow: 1px 1px 50px black;
+	margin-bottom: 5px;
+}
+
+.titulo a:hover { /* mudar a cor ao passar o mouse - matheus */
+	color: #88b4fd;
+}
+
+.loja {/* dispões as fotos uma embaixo da outra com o texto ao lado - matheus */
+	width: 100%;
+	display: block;
+	margin-top: 30px;
+}
+
+.loja h2 {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.loja p {
+	margin: 0;
+}
+
+.loja-img { /* imagem flutua à esquerda do texto - matheus */
+	float: left;
+	width: 220px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
 
 
 
@@ -144,6 +240,17 @@ body { /* imagem de plano de fundo cobre a tela e não se repete */
 		width: 100%;
 		margin: auto;
 		margin-bottom: 20px;
+	}
+
+	iframe {
+		width: 90%;
+	}
+
+	.loja-img {  /* ajusta a imagem - matheus */
+		width: 100%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
 	}
 
 
