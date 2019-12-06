@@ -1,160 +1,159 @@
 html, body {
-	margin: 0;
-	padding: 0;
-
-}/* - matheus*/
+    margin: 0;
+    padding: 0;
+}
+/* - matheus*/
 
 body { /* imagem de plano de fundo cobre a tela e não se repete */
-	background-repeat: no-repeat;
-	background-size: cover; /* imagem de plano */
-	font-family: 'Source Sans Pro', sans-serif;	
+    background-repeat: no-repeat;
+    background-size: cover; /* imagem de plano */
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-html, body {height:100%;}
+html, body {
+    height: 100%;
+}
 
 /*position para poder fixar rodapé apos conteudo - Renan*/
-main .geral{
-	min-height:100%;
-    position:relative;	
+main .geral {
+    min-height: 100%;
+    position: relative;
 }
 
 /*padronizar barra do menu com rodapé - Renan*/
 .navigation { /* estilos do menu de navegação - matheus */
-	font-size: 28px;
-	color: #b3b3b3;
-	height: auto;
-	background-color: rgb(74, 74, 74, 0.9);
-	border: solid 0 rgb(74, 74, 74, 0.9);
-    width:100%;
+    font-size: 28px;
+    color: #b3b3b3;
+    height: auto;
+    background-color: rgb(74, 74, 74, 0.9);
+    border: solid 0 rgb(74, 74, 74, 0.9);
+    width: 100%;
 }
 
-.navigation ul { /* estilos da lista dentro do menu de navegação - matheus */
-	margin-top: 10px;
-	list-style: none;
-	padding-left: 0;
-	text-align: center;
-	height: auto;
+    .navigation ul { /* estilos da lista dentro do menu de navegação - matheus */
+        margin-top: 10px;
+        list-style: none;
+        padding-left: 0;
+        text-align: center;
+        height: auto;
+    }
+
+    .navigation li { /* estilos dos itens do menu de navegação - matheus */
+        font-weight: 900;
+        display: inline-block;
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 50px;
+    }
+
+        .navigation li.threeline-icon { /* esconde o ícone do menu para celular - matheus */
+            display: none;
+        }
+
+            .navigation li.threeline-icon:hover { /* muda a cor e o cursor, caso o site seja aberto em navegador com tela reduzida - matheus */
+                color: #88b4fd;
+                cursor: pointer;
+            }
+
+    .navigation a { /* estilos do texto dos itens do menu - matheus */
+        color: #dbdbdb;
+        text-decoration: none;
+        text-shadow: 1px 1px 50px black;
+        margin-bottom: 5px;
+    }
+
+        .navigation a:hover { /* mudar a cor ao passar o mouse - matheus */
+            color: #88b4fd;
+        }
+
+.capa { /* define o corpo do site para ocupar 70% da tela e centralizado - matheus */
+    width: 70%;
+    background-color: rgb(74, 74, 74, 0.9);
+    margin: auto;
+    padding: 10px 50px;
+    text-shadow: 1px 1px 50px black;
 }
 
-.navigation li { /* estilos dos itens do menu de navegação - matheus */
-	font-weight: 900;
-	display: inline-block;
-	padding-left: 50px;
-	padding-right: 50px;
-	line-height: 50px;
-}
-
-.navigation li.threeline-icon { /* esconde o ícone do menu para celular - matheus */
-	display: none;
-}
-
-.navigation li.threeline-icon:hover { /* muda a cor e o cursor, caso o site seja aberto em navegador com tela reduzida - matheus */
-	color: #88b4fd;
-	cursor: pointer;
-}
-
-.navigation a { /* estilos do texto dos itens do menu - matheus */ 
-	color: #dbdbdb;
-	text-decoration: none;
-	text-shadow: 1px 1px 50px black;
-	margin-bottom: 5px;
-}
-
-.navigation a:hover { /* mudar a cor ao passar o mouse - matheus */
-	color: #88b4fd;
-}
-
-.capa {/* define o corpo do site para ocupar 70% da tela e centralizado - matheus */
-	width: 70%;
-	background-color: rgb(74, 74, 74, 0.9);
-	margin: auto;	
-	padding: 10px 50px;	
-	text-shadow: 1px 1px 50px black;
-	
-}
-
-.capa span { /* destacar o nome da loja - matheus */
-	color: #88b4fd;
-	display: block;	
-}
+    .capa span { /* destacar o nome da loja - matheus */
+        color: #88b4fd;
+        display: block;
+    }
 
 .loja-pic { /* imagem flutua à esquerda do texto - matheus */
-	float: left;
-	width: 305px;
-	margin-right: 20px;
+    float: left;
+    width: 305px;
+    margin-right: 20px;
 }
 
 .titulo {
-	vertical-align: top;
-	color: #dbdbdb;
+    vertical-align: top;
+    color: #dbdbdb;
 }
 
-.titulo h1 { /* cria uma sombra atras do texto para destaque - matheus */
-	font-weight: 900;
-	text-transform: uppercase;
-	font-size: 50px;
-	line-height: 45px;
-	text-shadow: 1px 1px 50px black;
-}
+    .titulo h1 { /* cria uma sombra atras do texto para destaque - matheus */
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 45px;
+        text-shadow: 1px 1px 50px black;
+    }
 
-.titulo h2 {
-	font-weight: 900;
-	margin-top: -30px;
-}
+    .titulo h2 {
+        font-weight: 900;
+        margin-top: -30px;
+    }
 
-.titulo p {
-	text-align: justify;
-}
+    .titulo p {
+        text-align: justify;
+    }
 
 .caminho { /* estilos mapa do site - matheus */
-	list-style: none;
-	padding-left: 0;
-	color: #88b4fd;
+    list-style: none;
+    padding-left: 0;
+    color: #88b4fd;
 }
 
-.caminho li{
-	display: inline-block;
-}
+    .caminho li {
+        display: inline-block;
+    }
 
-.caminho a {
-	color: #88b4fd;
-}
-.caminho a:hover {
-	color: #dbdbdb;
-}
+    .caminho a {
+        color: #88b4fd;
+    }
+
+        .caminho a:hover {
+            color: #dbdbdb;
+        }
 
 /* rodapé para fixar apos conteudo - Renan */
-.rodape {	
-	font-size: 16px;	
-	color: #b3b3b3;
-	background-color: rgb(74, 74, 74, 0.9);
-	border: solid 0 rgb(74, 74, 74, 0.9);	
-	bottom:0;
-	width: 100%;
-	position: relative;
+.rodape {
+    font-size: 16px;
+    color: #b3b3b3;
+    background-color: rgb(74, 74, 74, 0.9);
+    border: solid 0 rgb(74, 74, 74, 0.9);
+    bottom: 0;
+    width: 100%;
+    position: relative;
     margin-top: 30px;
-	min-height: 50px;
+    min-height: 50px;
     margin-bottom: 10px;
-	
 }
 /*rodape da index - position para fixar ao fim da pagina - Renan*/
-.rodapeIndex{	
-	font-size: 16px;	
-	color: #b3b3b3;
-	background-color: rgb(74, 74, 74, 0.9);
-	border: solid 0 rgb(74, 74, 74, 0.9);	
-	bottom:0;	
-	min-height: 50px;
-	width: 100%;
-	position: absolute;	
+.rodapeIndex {
+    font-size: 16px;
+    color: #b3b3b3;
+    background-color: rgb(74, 74, 74, 0.9);
+    border: solid 0 rgb(74, 74, 74, 0.9);
+    bottom: 0;
+    min-height: 50px;
+    width: 100%;
+    position: absolute;
 }
 
-#rodape { 
-	display: block;	
-	color: white;
-    text-align:center;  
-   
-
+#rodape {
+    display: block;
+    color: white;
+    text-align: center;
 }
 
 /*rodape - alinhar e centralizar - Renan*/
@@ -164,44 +163,43 @@ main .geral{
     color: white;
     vertical-align: central;
     margin: 10px 10px 10px 10px;
-    
 }
 
-#rodape li a{ 
-	color: white;
-	text-align: center;		
+#rodape li a {
+    color: white;
+    text-align: center;
 }
-/*aumenta font ao passar o mouse - Renan*/
-#rodape li a:hover{ 
-	color: white;
-	font-size:19px;
-	cursor: pointer;	
-}
+    /*aumenta font ao passar o mouse - Renan*/
+    #rodape li a:hover {
+        color: white;
+        font-size: 19px;
+        cursor: pointer;
+    }
 
 
 
-iframe { /* centralizar ifrmae - matheus */ 
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
+iframe { /* centralizar ifrmae - matheus */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .catalogo {
-	width: 100%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.titulo a { /* estilos do texto dos itens do menu - matheus */ 
-	color: #dbdbdb;
-	text-shadow: 1px 1px 50px black;
-	margin-bottom: 5px;
+.titulo a { /* estilos do texto dos itens do menu - matheus */
+    color: #dbdbdb;
+    text-shadow: 1px 1px 50px black;
+    margin-bottom: 5px;
 }
 
-.titulo a:hover { /* mudar a cor ao passar o mouse - matheus */
-	color: #88b4fd;
-}
+    .titulo a:hover { /* mudar a cor ao passar o mouse - matheus */
+        color: #88b4fd;
+    }
 
 .loja { /* dispões as fotos uma embaixo da outra com o texto ao lado - matheus */
     width: 100%;
@@ -210,88 +208,152 @@ iframe { /* centralizar ifrmae - matheus */
     margin-bottom: 50px;
 }
 
-.loja h2 {
-	margin-top: 20px;
-	margin-bottom: 0;
-}
+    .loja h2 {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
 
-.loja p {
-	margin: 0;   
-}
+    .loja p {
+        margin: 0;
+    }
 
 .loja-img { /* imagem flutua à esquerda do texto - matheus */
-	float: left;
-	width: 220px;
-    /*margem para separar mais os itens - Renan*/
-	margin-right: 30px;
-	margin-bottom: 30px;
-}
-
-.mapa-img { /* mapa do site - tamanho e margem - Renan*/    
-    width: 90%;
+    float: left;
+    width: 220px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
-/* logo - ajuste tamanho para rodape - Renan*/    
-.logorodape-img {
-    width: 100px;
+
+.contato { /* ajusta para aparecer ao lado da localização - matheus */
+    display: inline-block;
+    float: left;
+    width: 40%;
+    height: auto;
+    margin-right: 10%;
+}
+
+.localizacao {
+    display: inline-block;
+    width: 40%;
+    margin-left: 10%;
+    height: auto;
+}
+
+table {
+    margin-top: 0;
+}
+
+    table p {
+        margin: 0;
+    }
+
+form {
+    width: 50%;
+}
+
+input {
+    width: 90%;
+}
+
+fieldset h2 {
+    margin-bottom: 0;
+}
+
+.msg {
+    width: 90%;
+    height: 150px;
+}
+
+.button {
+    width: 5em;
 }
 
 
+@media (max-width: 1000px) { /* define como o estilo quando a página chegar a 900px de largura - matheus */
 
-@media (max-width: 1000px){ /* define como o estilo quando a página chegar a 900px de largura - matheus */
+    body { /* plano de fundo se ajusta à tela - matheus*/
+        background-repeat: repeat;
+        background-size: 100%;
+    }
 
-	body { /* plano de fundo se ajusta à tela - matheus*/
-		background-repeat: repeat;
-		background-size: 100%;
-	}
+    .navigation {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 50px;
+    }
 
-	.navigation {
-		margin: auto;
-		margin-bottom: 20px;
-		width: 50px;
-	}
+        .navigation li { /* oculta os itens do menu de navegação -matheus */
+            display: none;
+        }
 
-	.navigation li{ /* oculta os itens do menu de navegação -matheus */
-		display: none;
-	}
+            .navigation li.threeline-icon { /* mostra o ícone de menu - matheus */
+                display: inline-block;
+                padding: 0;
+            }
 
-	.navigation li.threeline-icon { /* mostra o ícone de menu - matheus */
-		display: inline-block;
-		padding: 0;
-	}
+    .loja-pic { /* ajusta a imagem - matheus */
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
 
-	.loja-pic {/* ajusta a imagem - matheus */
-		width: 100%;
-		margin: auto;
-		margin-bottom: 20px;
-	}
+    iframe {
+        width: 90%;
+    }
 
-	iframe {
-		width: 90%;
-	}
+    .loja-img { /* ajusta a imagem - matheus */
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
 
-	.loja-img {  /* ajusta a imagem - matheus */
-		width: 100%;
-		margin: auto;
-		margin-bottom: 20px;
-	}
+    .contato { /* ajusta a pagina de contatos para que a localização apareça embaixo com display block - matheus */
+        width: 100%;
+        display: block;
+        float: none;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .localizacao {
+        display: block;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    table {
+        margin: auto;
+        width: 100%
+    }
+
+        table p {
+            margin: 0;
+        }
+
+    td {
+        width: 40%;
+    }
+
+    form {
+        width: 100%;
+    }
 
 
-/* estilos do menu retratil de celular - matheus */
-	.menujs{
-		width: 90%;
-	}
+    /* estilos do menu retratil de celular - matheus */
+    .menujs {
+        width: 90%;
+    }
 
-	.menujs ul{
-		padding-right: 15%;
-		padding-left: 15%;
-	}
+        .menujs ul {
+            padding-right: 15%;
+            padding-left: 15%;
+        }
 
-	.menujs li{
-		display: block;
-		padding: 0;
-		border-bottom: 1px solid #b3b3b3;
-	}
+        .menujs li {
+            display: block;
+            padding: 0;
+            border-bottom: 1px solid #b3b3b3;
+        }
 }
