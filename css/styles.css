@@ -18,6 +18,7 @@ main .geral{
     position:relative;	
 }
 
+/*padronizar barra do menu com rodapé - Renan*/
 .navigation { /* estilos do menu de navegação - matheus */
 	font-size: 28px;
 	color: #b3b3b3;
@@ -151,7 +152,8 @@ main .geral{
 #rodape { 
 	display: block;	
 	color: white;
-    text-align:center;    
+    text-align:center;  
+   
 
 }
 
@@ -220,14 +222,20 @@ iframe { /* centralizar ifrmae - matheus */
 .loja-img { /* imagem flutua à esquerda do texto - matheus */
 	float: left;
 	width: 220px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+    /*margem para separar mais os itens - Renan*/
+	margin-right: 30px;
+	margin-bottom: 30px;
 }
 
-.mapa-img { /* Renan*/    
+.mapa-img { /* mapa do site - tamanho e margem - Renan*/    
     width: 90%;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+/* logo - ajuste tamanho para rodape - Renan*/    
+.logorodape-img {
+    width: 100px;
 }
 
 
@@ -269,9 +277,6 @@ iframe { /* centralizar ifrmae - matheus */
 		margin: auto;
 		margin-bottom: 20px;
 	}
-	}
-
-
 
 
 /* estilos do menu retratil de celular - matheus */
