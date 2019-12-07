@@ -13,3 +13,42 @@ function openNav(){
 	}
 
 }
+//validacao de formulario de contato - Renan
+function enviardados() {
+
+    //valida nome - Renan
+    if (document.dados.nome.value == "" ||
+        document.dados.nome.value.length < 4) {
+        alert("Preencha campo NOME corretamente!");
+        document.dados.nome.focus();       
+        return false;
+    }
+
+    //valida email - Renan
+    if (document.dados.email.value == "" ||
+        document.dados.email.value.indexOf('@') == -1 ||
+        document.dados.email.value.indexOf('.') == -1) {
+        alert("Preencha campo E-MAIL corretamente!");
+        document.dados.email.focus();
+        return false;
+    }
+
+    //valida mensagem nao vazia - Renan
+    if (document.dados.mensagem.value == "") {
+        alert("Preencha o campo MENSAGEM!");
+        document.dados.mensagem.focus();
+        return false;
+    }
+
+    //valida tamanho da mensagem - Renan
+    if (document.dados.mensagem.value.length < 10) {
+        alert("É necessario preencher o campo MENSAGEM pelo menos 10 caracteres!" );
+        document.dados.mensagem.focus();
+        return false;
+    }
+    //feedback apos envio com sucesso
+    alert("Mensagem enviada com sucesso!");
+    return true;
+}
+
+

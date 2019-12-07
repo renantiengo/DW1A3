@@ -12,87 +12,106 @@
 
 	</head>
 
-	<body style="background-image: url(images/bg_img.jpg);">
+    <body style="background-image: url(images/bg_img.jpg);">
 
-		<div id="navigation" class="navigation">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="quemsomos.html">Quem Somos</a></li>
-				<li><a href="multimidia.html">Multimídia</a></li>
-				<li><a href="lojas.html">Lojas</a></li>
-				<li><a href="contato.html">Contato</a></li>
-				<li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
-			</ul>
-		</div>
+        <!--Ajuste de semantica - refatorando HTML (removendo div para inserir tags header, main, section, article, footer- Renan -->
+        <header>
+            <nav id="navigation" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                    <li><a href="multimidia.html">Multimídia</a></li>
+                    <li><a href="lojas.html">Lojas</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+                </ul>
+            </nav>
+        </header>
 
-		<div class="capa">
-			<ul class="caminho">
-				<li><a href="index.html">Home</a></li>
-				<li>></li>
-				<li>Contato</li>
-			</ul>
+        <main class="geral">
 
-			<div class="titulo">
-				<h1>CONTATO</h1>
+            <section class="capa">
+                <ul class="caminho">
+                    <li><a href="index.html">Home</a></li>
+                    <li>></li>
+                    <li>Contato</li>
+                </ul>
 
-				<div class="contato">
-					<p>Malharia Jacutinga</p>
-					<table>
-						<tr>
-							<td colspan="2"><p>Largo da Estação, Praça Delfim Moreira, 86</p></td>
-						</tr>
-						<tr>
-							<td><p>Telefone:</p></td>
-							<td><p>(35) 3443 5288</p></td>
-						</tr>
-						<tr>
-							<td><p>WhatsApp:</p></td>
-							<td><p>(35) 99936-0755</p></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td><p>(35) 99741-7237</p></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td><p>(35) 99746-8285</p></td>
-						</tr>					
-						<tr>
-							<td colspan="2"><p>Av. Minas Gerais, 897-A</p></td>
-						</tr>
-						<tr>
-							<td><p>Telefone:</p></td>
-							<td><p>(35) 3443 1956</p></td>
-						</tr>
-						<tr>
-							<td><p>WhatsApp:</p></td>
-							<td><p>(35) 99745-7572</p></td>
-						</tr>
-						<tr>
-							<td><p>Email:</p></td>
-							<td><p>contato@malhariajacutinga.com.br</p></td>
-						</tr>
-					</table>
-				</div>
+                <section class="titulo">
+                    <h1>CONTATO</h1>
 
-				<div class="localizacao">
-					<h2>Localização:</h2>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d1845.8928924248519!2d-46.609089!3d-22.286103!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x94c909e8b25bbc39%3A0x25da8380282a8c3c!2sJacutinga%20-%20MG!3m2!1d-22.2832567!2d-46.6089279!4m3!3m2!1d-22.286479999999997!2d-46.609175!5e0!3m2!1spt-BR!2sbr!4v1575639805203!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" target="_blank"></iframe>
-				</div>
+                    <article class="contato">
+                        <p>Malharia Jacutinga</p>
+                        <table>
+                            <tr>
+                                <td colspan="2"><p>Largo da Estação, Praça Delfim Moreira, 86</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Telefone:</p></td>
+                                <td><p>(35) 3443 5288</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>WhatsApp:</p></td>
+                                <td><p>(35) 99936-0755</p></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><p>(35) 99741-7237</p></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><p>(35) 99746-8285</p></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><p>Av. Minas Gerais, 897-A</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Telefone:</p></td>
+                                <td><p>(35) 3443 1956</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>WhatsApp:</p></td>
+                                <td><p>(35) 99745-7572</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Email:</p></td>
+                                <td><p>contato@malhariajacutinga.com.br</p></td>
+                            </tr>
+                        </table>
+                    </article>
 
-				<form>
-					<fieldset>
-						<legend><h2>Envie-nos uma mensagem</h2></legend>
-						<p>Nome:</p><input id="infoContato" type="text" name="nome"><br>
-						<p>Email:</p><input id="infoContato" type="email" name="email"><br>
-						<p>Mensagem:</p><textarea id="infoContato" class="msg" wrap="hard" name="mensagem"></textarea><br>
-						<input  class="button" type="submit" value="Enviar">
-						<input class="button" type="button" value="Limpar">
-					</fieldset>
-				</form>
-			</div>
-		</>
+                    <aside class="localizacao">
+                        <h2>Localização:</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d1845.8928924248519!2d-46.609089!3d-22.286103!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x94c909e8b25bbc39%3A0x25da8380282a8c3c!2sJacutinga%20-%20MG!3m2!1d-22.2832567!2d-46.6089279!4m3!3m2!1d-22.286479999999997!2d-46.609175!5e0!3m2!1spt-BR!2sbr!4v1575639805203!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" target="_blank"></iframe>
+                    </aside>
 
-	</body>
+                    <form action="contato.html" method="post" name="dados"onSubmit="return enviardados();">
+                        <fieldset>
+                            <legend><h2>Envie-nos uma mensagem</h2></legend>
+                            <p>Nome:</p><input id="nome" type="text" name="nome"><br>
+                            <p>Email:</p><input id="email" type="email" name="email"><br>
+                            <p>Mensagem:</p><textarea id="mensagem" class="msg" wrap="hard" name="mensagem"></textarea><br>
+                            <input class="button" id="submit" type="submit" value="Enviar">
+                            <input class="button" type="button" value="Limpar">
+                        </fieldset>
+                    </form>                    
+                </section>
+
+        </main>
+
+
+        <footer id="rodape" class="rodape">
+            <nav class="dadosRodape"
+                <ul>
+                    <li>©Malharia Jacutinga Copyright - 2019</li>
+                    <li><a href="mapadosite.html">Mapa do Site</a></li>
+                    <li><a href="https://pt-br.facebook.com/pages/category/Clothing--Brand-/Malharia-Jacutinga-161318064028408/"><img src="images/facebook.jpg" alt="conta facebook"></a></li>
+                    <li><a href="https://www.instagram.com/malhariajacutinga/"> <img src="images/instagram.jpg" alt="conta instagram"> </a></li>
+                    <li><img class="logorodape-img" src="images/logo.jpg" alt="logo da empresa"> </></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="js/scripts.js"></script>
+    </body>
 
 </html>

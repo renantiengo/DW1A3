@@ -121,9 +121,9 @@ main .geral {
         color: #88b4fd;
     }
 
-        .caminho a:hover {
-            color: #dbdbdb;
-        }
+    .caminho a:hover {
+        color: #dbdbdb;
+    }
 
 /* rodapé para fixar apos conteudo - Renan */
 .rodape {
@@ -177,6 +177,50 @@ main .geral {
     }
 
 
+.contato { /* ajusta para aparecer ao lado da localização - matheus */ 
+	display: inline-block;
+	float: left;
+	width: 40%;
+	height: auto;
+	margin-right: 10%;
+}
+
+.localizacao {
+	display: inline-block;
+	width: 40%;
+	margin-left: 10%;
+	height: auto;
+}
+
+table {
+	margin-top: 0;
+}
+
+table p {
+	margin: 0;
+}
+
+form {
+	width: 50%;
+}
+
+input {
+	width: 90%;
+}
+
+fieldset h2 {
+	margin-bottom: 0;
+}
+
+.msg {
+	width: 90%;
+	height: 150px;
+}
+
+.button {
+	width: 5em;
+}
+
 
 iframe { /* centralizar ifrmae - matheus */
     display: block;
@@ -220,54 +264,22 @@ iframe { /* centralizar ifrmae - matheus */
 .loja-img { /* imagem flutua à esquerda do texto - matheus */
     float: left;
     width: 220px;
+    /*margem para separar mais os itens - Renan*/
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.mapa-img { /* mapa do site - tamanho e margem - Renan*/
+    width: 90%;
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
-
-.contato { /* ajusta para aparecer ao lado da localização - matheus */
-    display: inline-block;
-    float: left;
-    width: 40%;
-    height: auto;
-    margin-right: 10%;
+/* logo - ajuste tamanho para rodape - Renan*/
+.logorodape-img {
+    width: 100px;
 }
 
-.localizacao {
-    display: inline-block;
-    width: 40%;
-    margin-left: 10%;
-    height: auto;
-}
-
-table {
-    margin-top: 0;
-}
-
-    table p {
-        margin: 0;
-    }
-
-form {
-    width: 50%;
-}
-
-input {
-    width: 90%;
-}
-
-fieldset h2 {
-    margin-bottom: 0;
-}
-
-.msg {
-    width: 90%;
-    height: 150px;
-}
-
-.button {
-    width: 5em;
-}
 
 
 @media (max-width: 1000px) { /* define como o estilo quando a página chegar a 900px de largura - matheus */
@@ -306,38 +318,6 @@ fieldset h2 {
         width: 100%;
         margin: auto;
         margin-bottom: 20px;
-    }
-
-    .contato { /* ajusta a pagina de contatos para que a localização apareça embaixo com display block - matheus */
-        width: 100%;
-        display: block;
-        float: none;
-        margin: auto;
-        margin-bottom: 40px;
-    }
-
-    .localizacao {
-        display: block;
-        margin: auto;
-        width: 100%;
-        margin-bottom: 40px;
-    }
-
-    table {
-        margin: auto;
-        width: 100%
-    }
-
-        table p {
-            margin: 0;
-        }
-
-    td {
-        width: 40%;
-    }
-
-    form {
-        width: 100%;
     }
 
 
